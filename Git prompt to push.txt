@@ -1,0 +1,37 @@
+I want to push my current code changes to the GitHub repository from VS Code.
+Please perform the following steps carefully:
+Check the current Git repository status using git status.
+Identify the current branch using git branch --show-current.
+Check the configured remote repository using git remote -v.
+Review all modified, untracked, and deleted files.
+Make sure files listed in .gitignore are NOT staged.
+Do NOT stage or commit:
+.env files
+passwords, API keys, access tokens, secrets, credentials, certificates, or private keys
+node_modules
+Playwright test results and generated reports
+temporary files
+IDE-specific files unless they are intentionally tracked
+build/generated files unless they are required by the project
+Show me a summary of the files that are going to be committed.
+Stage all valid project changes using Git.
+Run git diff --cached and review the staged changes for accidental secrets, sensitive information, or unrelated files.
+Review all modified, untracked, and deleted files.
+Make sure files listed in .gitignore are NOT staged.
+Do NOT stage or commit:
+.env files
+passwords, API keys, access tokens, secrets, credentials, certificates, or private keys
+node_modules
+Playwright test results and generated reports
+temporary files
+IDE-specific files unless they are intentionally tracked
+build/generated files unless they are required by the project
+Show me a summary of the files that are going to be committed.
+Stage all valid project changes using Git.
+Run git diff --cached and review the staged changes for accidental secrets, sensitive information, or unrelated files.
+Suggest a clear and meaningful commit message based on the actual changes.
+Ask me for confirmation before creating the commit.
+After I confirm, create the commit with the suggested message.
+Push the commit to the current GitHub branch.
+If the push fails because the remote contains commits that I don't have locally, DO NOT force push. Explain the issue and suggest the safest next step.
+After a successful push, show me the commit ID, branch name, and confirm that the changes were pushed successfully.
